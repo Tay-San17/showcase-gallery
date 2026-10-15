@@ -13,8 +13,9 @@ app.use(express.json({ limit: "5mb" }));
 app.get("/", (req, res) => {
     res.json({ message: "ShowCase API is running!" });
 });
+
 app.use("/api/products", productRoutes);
 
 connectDB().then(() => {
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));;
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 });
