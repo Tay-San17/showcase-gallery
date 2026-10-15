@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import GalleryPage from "./pages/GalleryPage";
 import ManagePage from "./pages/ManagePage";
-import { getProducts, createProduct, updateProduct, deleteProduct } from "../src/Api";
+import { getProducts, createProduct, updateProduct, deleteProduct } from "../src/api";
 
 function App() {
   const [products, setProducts] = useState([]);
